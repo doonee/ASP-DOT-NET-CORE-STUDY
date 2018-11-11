@@ -25,10 +25,7 @@ namespace ASP_DOT_NET_CORE_STUDY
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            app.UseStaticFiles();
         }
     }
 }
